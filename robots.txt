@@ -1,17 +1,26 @@
-# robots.txt for Convert-image — Universal File Converter
+# robots.txt for Convert-Image — Universal File Converter
 # https://github.com/Mahdia50/Convert-image
 
+# Allow all search engines to crawl the full site
 User-agent: *
 Allow: /
 Disallow: /server/
 Disallow: /node_modules/
-
-# Sitemaps
-Sitemap: https://mahdia50.github.io/Convert-image/sitemap.xml
+Disallow: /api/
+Disallow: /scripts/
 
 # Crawl budget optimization
 User-agent: Googlebot
-Crawl-delay: 1
+Crawl-delay: 0.5
 
 User-agent: Bingbot
+Crawl-delay: 0.5
+
+User-agent: Yandex
 Crawl-delay: 1
+
+User-agent: Baiduspider
+Crawl-delay: 1
+
+# Sitemaps
+Sitemap: https://mahdia50.github.io/Convert-image/sitemap.xml
