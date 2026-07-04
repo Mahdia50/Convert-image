@@ -23,4 +23,4 @@ User-agent: Baiduspider
 Crawl-delay: 1
 
 # Sitemaps
-Sitemap: https://mahdia50.github.io/Convert-image/sitemap.xml
+Sitemap: https://convertinoall.vercel.app/sitemap.xml

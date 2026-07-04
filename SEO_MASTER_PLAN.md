@@ -1,7 +1,7 @@
 # 🏆 PixelForge SEO Master Plan — Universal File Converter
 
 **Date**: July 4, 2026  
-**Website**: [https://mahdia50.github.io/Convert-image/](https://mahdia50.github.io/Convert-image/)  
+**Website**: [https://convertinoall.vercel.app/](https://convertinoall.vercel.app/)  
 **GitHub**: [https://github.com/Mahdia50/Convert-image](https://github.com/Mahdia50/Convert-image)  
 **Status**: Single-Page Application (SPA) — Requires Full SEO Transformation
 
@@ -444,7 +444,7 @@ Every conversion landing page follows this template:
 **SEO Title**: Convert PNG to JPG Online Free — PixelForge Image Converter  
 **Meta Description**: Convert PNG to JPG online for free with PixelForge. No registration, no watermarks, 100% private. Batch convert images with adjustable quality.  
 **URL Slug**: `/png-to-jpg/`  
-**Canonical**: `https://mahdia50.github.io/Convert-image/png-to-jpg/`
+**Canonical**: `https://convertinoall.vercel.app/png-to-jpg/`
 
 **H1**: Convert PNG to JPG Online Free — Fast, Private & Batch Supported
 
@@ -633,8 +633,8 @@ User-agent: Bingbot
 Crawl-delay: 0.5
 
 # Sitemaps
-Sitemap: https://mahdia50.github.io/Convert-image/sitemap.xml
-Sitemap: https://mahdia50.github.io/Convert-image/sitemap-news.xml
+Sitemap: https://convertinoall.vercel.app/sitemap.xml
+Sitemap: https://convertinoall.vercel.app/sitemap-news.xml
 ```
 
 ### 6.4 Dynamic Sitemap Generation
@@ -649,7 +649,7 @@ Generate a sitemap with ALL conversion pages:
   
   <!-- Homepage -->
   <url>
-    <loc>https://mahdia50.github.io/Convert-image/</loc>
+    <loc>https://convertinoall.vercel.app/</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
@@ -659,7 +659,7 @@ Generate a sitemap with ALL conversion pages:
 
   <!-- Each conversion page -->
   <url>
-    <loc>https://mahdia50.github.io/Convert-image/png-to-jpg/</loc>
+    <loc>https://convertinoall.vercel.app/png-to-jpg/</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -667,7 +667,7 @@ Generate a sitemap with ALL conversion pages:
   
   <!-- Blog posts -->
   <url>
-    <loc>https://mahdia50.github.io/Convert-image/blog/how-to-convert-png-to-jpg/</loc>
+    <loc>https://convertinoall.vercel.app/blog/how-to-convert-png-to-jpg/</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -680,13 +680,13 @@ Generate a sitemap with ALL conversion pages:
 ```xml
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <sitemap>
-    <loc>https://mahdia50.github.io/Convert-image/sitemap-pages.xml</loc>
+    <loc>https://convertinoall.vercel.app/sitemap-pages.xml</loc>
   </sitemap>
   <sitemap>
-    <loc>https://mahdia50.github.io/Convert-image/sitemap-images.xml</loc>
+    <loc>https://convertinoall.vercel.app/sitemap-images.xml</loc>
   </sitemap>
   <sitemap>
-    <loc>https://mahdia50.github.io/Convert-image/sitemap-blog.xml</loc>
+    <loc>https://convertinoall.vercel.app/sitemap-blog.xml</loc>
   </sitemap>
 </sitemapindex>
 ```
@@ -695,17 +695,17 @@ Generate a sitemap with ALL conversion pages:
 
 ```html
 <!-- On each page, include ALL language variants -->
-<link rel="alternate" hreflang="en" href="https://mahdia50.github.io/Convert-image/png-to-jpg/" />
-<link rel="alternate" hreflang="ar" href="https://mahdia50.github.io/Convert-image/ar/png-to-jpg/" />
-<link rel="alternate" hreflang="fr" href="https://mahdia50.github.io/Convert-image/fr/png-to-jpg/" />
-<link rel="alternate" hreflang="es" href="https://mahdia50.github.io/Convert-image/es/png-to-jpg/" />
-<link rel="alternate" hreflang="de" href="https://mahdia50.github.io/Convert-image/de/png-to-jpg/" />
-<link rel="alternate" hreflang="zh" href="https://mahdia50.github.io/Convert-image/zh/png-to-jpg/" />
-<link rel="alternate" hreflang="ja" href="https://mahdia50.github.io/Convert-image/ja/png-to-jpg/" />
-<link rel="alternate" hreflang="pt" href="https://mahdia50.github.io/Convert-image/pt/png-to-jpg/" />
-<link rel="alternate" hreflang="ru" href="https://mahdia50.github.io/Convert-image/ru/png-to-jpg/" />
-<link rel="alternate" hreflang="ko" href="https://mahdia50.github.io/Convert-image/ko/png-to-jpg/" />
-<link rel="alternate" hreflang="x-default" href="https://mahdia50.github.io/Convert-image/png-to-jpg/" />
+<link rel="alternate" hreflang="en" href="https://convertinoall.vercel.app/png-to-jpg/" />
+<link rel="alternate" hreflang="ar" href="https://convertinoall.vercel.app/ar/png-to-jpg/" />
+<link rel="alternate" hreflang="fr" href="https://convertinoall.vercel.app/fr/png-to-jpg/" />
+<link rel="alternate" hreflang="es" href="https://convertinoall.vercel.app/es/png-to-jpg/" />
+<link rel="alternate" hreflang="de" href="https://convertinoall.vercel.app/de/png-to-jpg/" />
+<link rel="alternate" hreflang="zh" href="https://convertinoall.vercel.app/zh/png-to-jpg/" />
+<link rel="alternate" hreflang="ja" href="https://convertinoall.vercel.app/ja/png-to-jpg/" />
+<link rel="alternate" hreflang="pt" href="https://convertinoall.vercel.app/pt/png-to-jpg/" />
+<link rel="alternate" hreflang="ru" href="https://convertinoall.vercel.app/ru/png-to-jpg/" />
+<link rel="alternate" hreflang="ko" href="https://convertinoall.vercel.app/ko/png-to-jpg/" />
+<link rel="alternate" hreflang="x-default" href="https://convertinoall.vercel.app/png-to-jpg/" />
 ```
 
 ---
@@ -739,11 +739,11 @@ Generate a sitemap with ALL conversion pages:
   "author": {
     "@type": "Organization",
     "name": "PixelForge",
-    "url": "https://mahdia50.github.io/Convert-image/"
+    "url": "https://convertinoall.vercel.app/"
   },
   "featureList": "Free, No Registration, Batch Processing, Privacy-First, Client-Side Processing",
-  "screenshot": "https://mahdia50.github.io/Convert-image/assets/screenshot.png",
-  "image": "https://mahdia50.github.io/Convert-image/assets/logo.png"
+  "screenshot": "https://convertinoall.vercel.app/assets/screenshot.png",
+  "image": "https://convertinoall.vercel.app/assets/logo.png"
 }
 </script>
 ```
@@ -816,21 +816,21 @@ Generate a sitemap with ALL conversion pages:
       "position": 1,
       "name": "Upload your PNG files",
       "text": "Click the 'Select Files' button or drag and drop your PNG images onto the upload area.",
-      "image": "https://mahdia50.github.io/Convert-image/assets/howto-upload.png"
+      "image": "https://convertinoall.vercel.app/assets/howto-upload.png"
     },
     {
       "@type": "HowToStep",
       "position": 2,
       "name": "Select JPG as output format",
       "text": "Choose JPG from the output format selector. Adjust quality using the slider (90% recommended for best balance).",
-      "image": "https://mahdia50.github.io/Convert-image/assets/howto-format.png"
+      "image": "https://convertinoall.vercel.app/assets/howto-format.png"
     },
     {
       "@type": "HowToStep",
       "position": 3,
       "name": "Convert and download",
       "text": "Click 'Convert All' to process your files. Once complete, download individual files or click 'Download All' to get them as a ZIP archive.",
-      "image": "https://mahdia50.github.io/Convert-image/assets/howto-download.png"
+      "image": "https://convertinoall.vercel.app/assets/howto-download.png"
     }
   ],
   "totalTime": "PT30S",
@@ -858,19 +858,19 @@ Generate a sitemap with ALL conversion pages:
       "@type": "ListItem",
       "position": 1,
       "name": "Home",
-      "item": "https://mahdia50.github.io/Convert-image/"
+      "item": "https://convertinoall.vercel.app/"
     },
     {
       "@type": "ListItem",
       "position": 2,
       "name": "Image Conversion",
-      "item": "https://mahdia50.github.io/Convert-image/image/"
+      "item": "https://convertinoall.vercel.app/image/"
     },
     {
       "@type": "ListItem",
       "position": 3,
       "name": "PNG to JPG",
-      "item": "https://mahdia50.github.io/Convert-image/png-to-jpg/"
+      "item": "https://convertinoall.vercel.app/png-to-jpg/"
     }
   ]
 }
@@ -885,8 +885,8 @@ Generate a sitemap with ALL conversion pages:
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "PixelForge",
-  "url": "https://mahdia50.github.io/Convert-image/",
-  "logo": "https://mahdia50.github.io/Convert-image/assets/logo.png",
+  "url": "https://convertinoall.vercel.app/",
+  "logo": "https://convertinoall.vercel.app/assets/logo.png",
   "description": "Universal file converter platform supporting images, documents, audio, video, archives, and more.",
   "sameAs": [
     "https://github.com/Mahdia50/Convert-image",
@@ -896,7 +896,7 @@ Generate a sitemap with ALL conversion pages:
     "@type": "ContactPoint",
     "contactType": "customer support",
     "email": "support@pixelforge.app",
-    "url": "https://mahdia50.github.io/Convert-image/page/contact/"
+    "url": "https://convertinoall.vercel.app/page/contact/"
   },
   "foundingDate": "2025",
   "numberOfEmployees": {
@@ -916,12 +916,12 @@ Generate a sitemap with ALL conversion pages:
   "@context": "https://schema.org",
   "@type": "WebSite",
   "name": "PixelForge",
-  "url": "https://mahdia50.github.io/Convert-image/",
+  "url": "https://convertinoall.vercel.app/",
   "potentialAction": {
     "@type": "SearchAction",
     "target": {
       "@type": "EntryPoint",
-      "urlTemplate": "https://mahdia50.github.io/Convert-image/?search={search_term_string}"
+      "urlTemplate": "https://convertinoall.vercel.app/?search={search_term_string}"
     },
     "query-input": "required name=search_term_string"
   }
@@ -1467,18 +1467,18 @@ To appear in ChatGPT and Perplexity answers:
   <meta name="keywords" content="convert [from] to [to], [from] to [to] converter, free [from] to [to] converter, online [from] converter">
   
   <!-- Canonical -->
-  <link rel="canonical" href="https://mahdia50.github.io/Convert-image/[from]-to-[to]/">
+  <link rel="canonical" href="https://convertinoall.vercel.app/[from]-to-[to]/">
   
   <!-- Hreflang -->
-  <link rel="alternate" hreflang="en" href="https://mahdia50.github.io/Convert-image/[from]-to-[to]/">
-  <link rel="alternate" hreflang="x-default" href="https://mahdia50.github.io/Convert-image/[from]-to-[to]/">
+  <link rel="alternate" hreflang="en" href="https://convertinoall.vercel.app/[from]-to-[to]/">
+  <link rel="alternate" hreflang="x-default" href="https://convertinoall.vercel.app/[from]-to-[to]/">
   
   <!-- Open Graph -->
   <meta property="og:title" content="Convert [FROM] to [TO] Online Free — PixelForge">
   <meta property="og:description" content="Free [FROM] to [TO] converter. 100% private, no registration, batch conversion.">
-  <meta property="og:url" content="https://mahdia50.github.io/Convert-image/[from]-to-[to]/">
+  <meta property="og:url" content="https://convertinoall.vercel.app/[from]-to-[to]/">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://mahdia50.github.io/Convert-image/assets/og-image.png">
+  <meta property="og:image" content="https://convertinoall.vercel.app/assets/og-image.png">
   
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
@@ -1517,7 +1517,7 @@ To appear in ChatGPT and Perplexity answers:
 <head>
   <title>[Blog Title] — PixelForge Blog</title>
   <meta name="description" content="[150-160 char description with target keyword]">
-  <link rel="canonical" href="https://mahdia50.github.io/Convert-image/blog/[slug]/">
+  <link rel="canonical" href="https://convertinoall.vercel.app/blog/[slug]/">
   
   <article itemscope itemtype="https://schema.org/Article">
     <meta itemprop="datePublished" content="2026-07-04">
