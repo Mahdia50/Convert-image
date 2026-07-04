@@ -17,6 +17,9 @@
     theme: localStorage.getItem('pixelforge_theme') || 'dark',
   };
 
+  // Expose state for other modules
+  window.appState = state;
+
   // DOM references
   const $ = (sel) => document.querySelector(sel);
   const $$ = (sel) => document.querySelectorAll(sel);

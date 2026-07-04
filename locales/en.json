@@ -2,16 +2,28 @@
   "nav": {
     "converter": "Converter",
     "editor": "Editor",
-    "settings": "Settings"
+    "settings": "Settings",
+    "pdfTools": "PDF Tools",
+    "mediaTools": "Media Tools",
+    "queue": "Queue"
   },
   "hero": {
-    "title": "Convert Images Instantly",
-    "subtitle": "Professional-grade image conversion with editing tools, batch processing, and cloud support"
+    "title": "Convert Any File",
+    "subtitle": "Professional-grade file conversion — images, documents, audio, video, and more"
   },
   "upload": {
     "title": "Drop images here or click to browse",
-    "supported": "Supports: JPEG, PNG, GIF, BMP, TIFF, WEBP, SVG, AVIF",
+    "supported": "All file types supported — Images, Documents, Audio, Video, Archives, and more",
     "browse": "Browse Files"
+  },
+  "cat": {
+    "images": "Images",
+    "documents": "Documents",
+    "spreadsheets": "Spreadsheets",
+    "audio": "Audio",
+    "video": "Video",
+    "archives": "Archives",
+    "data": "Data"
   },
   "cloud": {
     "gdrive": "Google Drive",
@@ -32,7 +44,7 @@
     "converting": "Converting..."
   },
   "results": {
-    "title": "Converted Images",
+    "title": "Converted Files",
     "downloadAll": "Download All",
     "download": "Download"
   },
@@ -54,6 +66,61 @@
     "contrast": "Contrast",
     "saturation": "Saturation",
     "selectTool": "Select a tool to see options"
+  },
+  "pdfTools": {
+    "title": "PDF Tools",
+    "subtitle": "Convert, merge, split, compress, and edit PDF documents",
+    "wordToPdf": "Word to PDF",
+    "wordToPdfDesc": "Convert DOC/DOCX to PDF",
+    "pdfToWord": "PDF to Word",
+    "pdfToWordDesc": "Convert PDF to DOC/DOCX",
+    "merge": "Merge PDF",
+    "mergeDesc": "Combine multiple PDFs into one",
+    "split": "Split PDF",
+    "splitDesc": "Extract pages from a PDF",
+    "compress": "Compress PDF",
+    "compressDesc": "Reduce PDF file size",
+    "rotate": "Rotate PDF",
+    "rotateDesc": "Rotate PDF pages",
+    "protect": "Protect PDF",
+    "protectDesc": "Password-protect your PDF",
+    "unlock": "Unlock PDF",
+    "unlockDesc": "Remove PDF password protection",
+    "pdfToImages": "PDF to Images",
+    "pdfToImagesDesc": "Convert PDF pages to images",
+    "imagesToPdf": "Images to PDF",
+    "imagesToPdfDesc": "Combine images into a PDF"
+  },
+  "mediaTools": {
+    "title": "Audio & Video Tools",
+    "subtitle": "Convert, trim, compress, and extract media files",
+    "convertVideo": "Convert Video",
+    "convertVideoDesc": "Change video format",
+    "compressVideo": "Compress Video",
+    "compressVideoDesc": "Reduce video file size",
+    "trimVideo": "Trim Video",
+    "trimVideoDesc": "Cut segments from video",
+    "extractAudio": "Extract Audio",
+    "extractAudioDesc": "Extract audio from video",
+    "convertAudio": "Convert Audio",
+    "convertAudioDesc": "Convert between audio formats",
+    "trimAudio": "Trim Audio",
+    "trimAudioDesc": "Cut audio segments",
+    "changeResolution": "Change Resolution",
+    "changeResolutionDesc": "Resize video dimensions",
+    "createGif": "Create GIF",
+    "createGifDesc": "Convert video to animated GIF"
+  },
+  "queue": {
+    "title": "Conversion Queue",
+    "subtitle": "Monitor and manage your file conversions",
+    "active": "Active",
+    "completed": "Completed",
+    "failed": "Failed",
+    "total": "Total",
+    "empty": "No conversions yet. Upload a file and start converting!",
+    "clearAll": "Clear All",
+    "downloadAll": "Download All as ZIP"
   },
   "settings": {
     "title": "Settings",
@@ -79,21 +146,21 @@
     "autoDownload": "Auto Download",
     "autoDownloadDesc": "Automatically download converted files",
     "about": "About",
-    "version": "Version 1.0.0 — Professional Image Conversion Platform"
+    "version": "Version 2.0.0 — Universal File Converter Platform"
   },
   "loading": {
-    "processing": "Processing images...",
+    "processing": "Processing files...",
     "progress": "Processing",
     "files": "files"
   },
   "footer": {
-    "tagline": "Professional Image Conversion Platform",
-    "powered": "Powered by Canvas API"
+    "tagline": "Universal File Converter Platform",
+    "powered": "Powered by Canvas API & Backend Engine"
   },
   "toast": {
     "noValidImages": "No valid image files found",
-    "imagesAdded": "image(s) added",
-    "converted": "images converted successfully",
+    "imagesAdded": "file(s) added",
+    "converted": "files converted successfully",
     "failed": "failed",
     "error": "Conversion error",
     "loadedInEditor": "loaded in editor",

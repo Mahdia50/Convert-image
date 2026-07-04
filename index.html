@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Professional image conversion platform - Convert, edit, and optimize images online">
+  <meta name="description" content="PixelForge - Universal File Converter. Convert images, documents, audio, video, archives, and more.">
   <meta name="theme-color" content="#0f0f1a">
   <link rel="manifest" href="manifest.json">
-  <title>PixelForge - Image Converter</title>
+  <title>PixelForge - Universal File Converter</title>
   <link rel="icon" href="assets/logo.png" type="image/png">
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,6 +24,9 @@
         </div>
         <nav class="nav-links">
           <button class="nav-btn active" data-tab="converter" data-i18n="nav.converter">Converter</button>
+          <button class="nav-btn" data-tab="pdf-tools" data-i18n="nav.pdfTools">PDF Tools</button>
+          <button class="nav-btn" data-tab="media-tools" data-i18n="nav.mediaTools">Media Tools</button>
+          <button class="nav-btn" data-tab="queue" data-i18n="nav.queue">Queue</button>
           <button class="nav-btn" data-tab="editor" data-i18n="nav.editor">Editor</button>
           <button class="nav-btn" data-tab="settings" data-i18n="nav.settings">Settings</button>
         </nav>
@@ -64,8 +67,40 @@
       <section id="tab-converter" class="tab-content active">
         <!-- Hero Section -->
         <div class="hero">
-          <h1 data-i18n="hero.title">Convert Images Instantly</h1>
-          <p data-i18n="hero.subtitle">Professional-grade image conversion with editing tools, batch processing, and cloud support</p>
+          <h1 data-i18n="hero.title">Convert Any File</h1>
+          <p data-i18n="hero.subtitle">Professional-grade file conversion — images, documents, audio, video, and more</p>
+        </div>
+
+        <!-- Category Sub-Navigation -->
+        <div class="category-nav" id="categoryNav">
+          <button class="cat-btn active" data-category="images" data-i18n="cat.images">
+            <svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="16" height="16" rx="3"/><circle cx="7" cy="7" r="1.5"/><path d="M2 14l6-6 4 4 2-2 4 4"/></svg>
+            Images
+          </button>
+          <button class="cat-btn" data-category="documents" data-i18n="cat.documents">
+            <svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 2h8l4 4v12a2 2 0 01-2 2H4a2 2 0 01-2-2V4a2 2 0 012-2z"/><path d="M12 2v4h4"/><path d="M6 10h8M6 14h8"/></svg>
+            Documents
+          </button>
+          <button class="cat-btn" data-category="spreadsheets" data-i18n="cat.spreadsheets">
+            <svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="16" height="16" rx="2"/><path d="M2 8h16M2 12h16M8 2v16"/></svg>
+            Spreadsheets
+          </button>
+          <button class="cat-btn" data-category="audio" data-i18n="cat.audio">
+            <svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 18a3 3 0 100-6 3 3 0 000 6z"/><path d="M12 5l4 1.5v8.5"/><path d="M16 14a3 3 0 100-6 3 3 0 000 6z"/><path d="M12 5v10"/></svg>
+            Audio
+          </button>
+          <button class="cat-btn" data-category="video" data-i18n="cat.video">
+            <svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="12" height="12" rx="2"/><path d="M14 9l4-2.5v7L14 11"/></svg>
+            Video
+          </button>
+          <button class="cat-btn" data-category="archives" data-i18n="cat.archives">
+            <svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 2h12l2 2v14a2 2 0 01-2 2H4a2 2 0 01-2-2V4l2-2z"/><path d="M2 4h16"/><path d="M8 9h4"/></svg>
+            Archives
+          </button>
+          <button class="cat-btn" data-category="data" data-i18n="cat.data">
+            <svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5"><ellipse cx="10" cy="4" rx="8" ry="2"/><path d="M2 4v6c0 1.1 3.6 2 8 2s8-.9 8-2V4"/><path d="M2 10v6c0 1.1 3.6 2 8 2s8-.9 8-2v-6"/></svg>
+            Data
+          </button>
         </div>
 
         <!-- Upload Area -->
@@ -79,9 +114,9 @@
               <circle cx="29" cy="32" r="1.5" fill="currentColor" opacity="0.3"/>
             </svg>
             <h3 data-i18n="upload.title">Drop images here or click to browse</h3>
-            <p data-i18n="upload.supported">Supports: JPEG, PNG, GIF, BMP, TIFF, WEBP, SVG, AVIF</p>
+            <p data-i18n="upload.supported">All file types supported — Images, Documents, Audio, Video, Archives, and more</p>
             <button class="btn btn-primary btn-browse" id="browseBtn" data-i18n="upload.browse">Browse Files</button>
-            <input type="file" id="fileInput" multiple accept="image/*" hidden>
+            <input type="file" id="fileInput" multiple accept="*/*" hidden>
           </div>
           <div class="upload-progress" id="uploadProgress" style="display:none">
             <div class="progress-bar"><div class="progress-fill"></div></div>
@@ -362,9 +397,190 @@
             <div class="setting-item">
               <div class="setting-info">
                 <span class="setting-name">PixelForge</span>
-                <span class="setting-desc" data-i18n="settings.version">Version 1.0.0 — Professional Image Conversion Platform</span>
+                <span class="setting-desc" data-i18n="settings.version">Version 2.0.0 — Universal File Converter Platform</span>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====== PDF TOOLS TAB ====== -->
+      <section id="tab-pdf-tools" class="tab-content">
+        <div class="hero">
+          <h1 data-i18n="pdfTools.title">PDF Tools</h1>
+          <p data-i18n="pdfTools.subtitle">Convert, merge, split, compress, and edit PDF documents</p>
+        </div>
+        <div class="pdf-tools-container">
+          <div class="tools-grid">
+            <div class="tool-card" data-pdf-tool="word-to-pdf">
+              <div class="tool-card-icon"><svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg></div>
+              <h3 data-i18n="pdfTools.wordToPdf">Word to PDF</h3>
+              <p data-i18n="pdfTools.wordToPdfDesc">Convert DOC/DOCX to PDF</p>
+            </div>
+            <div class="tool-card" data-pdf-tool="pdf-to-word">
+              <div class="tool-card-icon"><svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg></div>
+              <h3 data-i18n="pdfTools.pdfToWord">PDF to Word</h3>
+              <p data-i18n="pdfTools.pdfToWordDesc">Convert PDF to DOC/DOCX</p>
+            </div>
+            <div class="tool-card" data-pdf-tool="merge">
+              <div class="tool-card-icon"><svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v10m0 0l-4-4m4 4l4-4M12 12v10m0 0l-4-4m4 4l4-4"/></svg></div>
+              <h3 data-i18n="pdfTools.merge">Merge PDF</h3>
+              <p data-i18n="pdfTools.mergeDesc">Combine multiple PDFs into one</p>
+            </div>
+            <div class="tool-card" data-pdf-tool="split">
+              <div class="tool-card-icon"><svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 4h12M6 8h8M6 12h12M6 16h8M6 20h12"/></svg></div>
+              <h3 data-i18n="pdfTools.split">Split PDF</h3>
+              <p data-i18n="pdfTools.splitDesc">Extract pages from a PDF</p>
+            </div>
+            <div class="tool-card" data-pdf-tool="compress">
+              <div class="tool-card-icon"><svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 3v10l4-4 4 4V3"/><path d="M4 17v2a2 2 0 002 2h12a2 2 0 002-2v-2"/></svg></div>
+              <h3 data-i18n="pdfTools.compress">Compress PDF</h3>
+              <p data-i18n="pdfTools.compressDesc">Reduce PDF file size</p>
+            </div>
+            <div class="tool-card" data-pdf-tool="rotate">
+              <div class="tool-card-icon"><svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2l4 4-4 4M18 6H8a6 6 0 000 12h2"/></svg></div>
+              <h3 data-i18n="pdfTools.rotate">Rotate PDF</h3>
+              <p data-i18n="pdfTools.rotateDesc">Rotate PDF pages</p>
+            </div>
+            <div class="tool-card" data-pdf-tool="protect">
+              <div class="tool-card-icon"><svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="9" width="16" height="12" rx="2"/><path d="M8 9V6a4 4 0 018 0v3"/><circle cx="12" cy="15" r="1.5"/></svg></div>
+              <h3 data-i18n="pdfTools.protect">Protect PDF</h3>
+              <p data-i18n="pdfTools.protectDesc">Password-protect your PDF</p>
+            </div>
+            <div class="tool-card" data-pdf-tool="unlock">
+              <div class="tool-card-icon"><svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="9" width="16" height="12" rx="2"/><path d="M8 9V6a4 4 0 018 0v3"/><circle cx="12" cy="15" r="1.5"/><path d="M9 15l3 3 3-3"/></svg></div>
+              <h3 data-i18n="pdfTools.unlock">Unlock PDF</h3>
+              <p data-i18n="pdfTools.unlockDesc">Remove PDF password protection</p>
+            </div>
+            <div class="tool-card" data-pdf-tool="pdf-to-images">
+              <div class="tool-card-icon"><svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="3"/><circle cx="8" cy="8" r="2"/><path d="M2 16l6-6 4 4 4-4 6 6"/></svg></div>
+              <h3 data-i18n="pdfTools.pdfToImages">PDF to Images</h3>
+              <p data-i18n="pdfTools.pdfToImagesDesc">Convert PDF pages to images</p>
+            </div>
+            <div class="tool-card" data-pdf-tool="images-to-pdf">
+              <div class="tool-card-icon"><svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M12 18V6m0 0l-4 4m4-4l4 4"/></svg></div>
+              <h3 data-i18n="pdfTools.imagesToPdf">Images to PDF</h3>
+              <p data-i18n="pdfTools.imagesToPdfDesc">Combine images into a PDF</p>
+            </div>
+          </div>
+          <div class="pdf-tool-upload" id="pdfToolUpload" style="display:none">
+            <div class="upload-area" id="pdfUploadArea">
+              <div class="upload-content">
+                <svg class="upload-icon" viewBox="0 0 48 48" width="48" height="48">
+                  <rect x="2" y="2" width="40" height="40" rx="12" stroke="currentColor" stroke-width="1.5" opacity="0.15"/>
+                  <path d="M22 10v16M14 18l8-8 8 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>
+                  <path d="M8 32v2a4 4 0 004 4h20a4 4 0 004-4v-2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.4"/>
+                </svg>
+                <h3 id="pdfUploadTitle">Drop files here or click to browse</h3>
+                <button class="btn btn-primary btn-browse" id="pdfBrowseBtn">Browse Files</button>
+                <input type="file" id="pdfFileInput" multiple hidden>
+              </div>
+            </div>
+            <div class="tool-settings" id="pdfToolSettings"></div>
+            <button class="btn btn-primary" id="pdfExecuteBtn">Execute</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====== MEDIA TOOLS TAB ====== -->
+      <section id="tab-media-tools" class="tab-content">
+        <div class="hero">
+          <h1 data-i18n="mediaTools.title">Audio &amp; Video Tools</h1>
+          <p data-i18n="mediaTools.subtitle">Convert, trim, compress, and extract media files</p>
+        </div>
+        <div class="media-tools-container">
+          <div class="tools-grid">
+            <div class="tool-card" data-media-tool="convert-video">
+              <div class="tool-card-icon"><svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="M17 12l-8 5V7l8 5z"/></svg></div>
+              <h3 data-i18n="mediaTools.convertVideo">Convert Video</h3>
+              <p data-i18n="mediaTools.convertVideoDesc">Change video format</p>
+            </div>
+            <div class="tool-card" data-media-tool="compress-video">
+              <div class="tool-card-icon"><svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 3v10l4-4 4 4V3"/><path d="M4 17v2a2 2 0 002 2h12a2 2 0 002-2v-2"/></svg></div>
+              <h3 data-i18n="mediaTools.compressVideo">Compress Video</h3>
+              <p data-i18n="mediaTools.compressVideoDesc">Reduce video file size</p>
+            </div>
+            <div class="tool-card" data-media-tool="trim-video">
+              <div class="tool-card-icon"><svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M7 4v16M17 4v16"/></svg></div>
+              <h3 data-i18n="mediaTools.trimVideo">Trim Video</h3>
+              <p data-i18n="mediaTools.trimVideoDesc">Cut segments from video</p>
+            </div>
+            <div class="tool-card" data-media-tool="extract-audio">
+              <div class="tool-card-icon"><svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 18a3 3 0 100-6 3 3 0 000 6z"/><path d="M12 5l4 1.5v8.5"/><path d="M16 14a3 3 0 100-6 3 3 0 000 6z"/></svg></div>
+              <h3 data-i18n="mediaTools.extractAudio">Extract Audio</h3>
+              <p data-i18n="mediaTools.extractAudioDesc">Extract audio from video</p>
+            </div>
+            <div class="tool-card" data-media-tool="convert-audio">
+              <div class="tool-card-icon"><svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 18a3 3 0 100-6 3 3 0 000 6z"/><path d="M12 5v10M12 5l4 1.5v6"/></svg></div>
+              <h3 data-i18n="mediaTools.convertAudio">Convert Audio</h3>
+              <p data-i18n="mediaTools.convertAudioDesc">Convert between audio formats</p>
+            </div>
+            <div class="tool-card" data-media-tool="trim-audio">
+              <div class="tool-card-icon"><svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 18a4 4 0 100-8 4 4 0 000 8z"/><path d="M12 2v4M12 18v4"/><path d="M22 12h-4M6 12H2"/></svg></div>
+              <h3 data-i18n="mediaTools.trimAudio">Trim Audio</h3>
+              <p data-i18n="mediaTools.trimAudioDesc">Cut audio segments</p>
+            </div>
+            <div class="tool-card" data-media-tool="change-resolution">
+              <div class="tool-card-icon"><svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 6H4a2 2 0 00-2 2v8a2 2 0 002 2h16a2 2 0 002-2V8a2 2 0 00-2-2z"/><path d="M2 10h20"/></svg></div>
+              <h3 data-i18n="mediaTools.changeResolution">Change Resolution</h3>
+              <p data-i18n="mediaTools.changeResolutionDesc">Resize video dimensions</p>
+            </div>
+            <div class="tool-card" data-media-tool="create-gif">
+              <div class="tool-card-icon"><svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5"><text x="4" y="20" font-size="18" font-weight="bold" fill="currentColor">GIF</text></svg></div>
+              <h3 data-i18n="mediaTools.createGif">Create GIF</h3>
+              <p data-i18n="mediaTools.createGifDesc">Convert video to animated GIF</p>
+            </div>
+          </div>
+          <div class="media-tool-upload" id="mediaToolUpload" style="display:none">
+            <div class="upload-area" id="mediaUploadArea">
+              <div class="upload-content">
+                <svg class="upload-icon" viewBox="0 0 48 48" width="48" height="48">
+                  <rect x="2" y="2" width="40" height="40" rx="12" stroke="currentColor" stroke-width="1.5" opacity="0.15"/>
+                  <path d="M22 10v16M14 18l8-8 8 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>
+                  <path d="M8 32v2a4 4 0 004 4h20a4 4 0 004-4v-2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.4"/>
+                </svg>
+                <h3 id="mediaUploadTitle">Drop media files here or click to browse</h3>
+                <button class="btn btn-primary btn-browse" id="mediaBrowseBtn">Browse Files</button>
+                <input type="file" id="mediaFileInput" multiple hidden>
+              </div>
+            </div>
+            <div class="tool-settings" id="mediaToolSettings"></div>
+            <button class="btn btn-primary" id="mediaExecuteBtn">Execute</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====== QUEUE TAB ====== -->
+      <section id="tab-queue" class="tab-content">
+        <div class="hero">
+          <h1 data-i18n="queue.title">Conversion Queue</h1>
+          <p data-i18n="queue.subtitle">Monitor and manage your file conversions</p>
+        </div>
+        <div class="queue-container">
+          <div class="queue-stats">
+            <div class="stat-card">
+              <span class="stat-number" id="queueActive">0</span>
+              <span class="stat-label" data-i18n="queue.active">Active</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number" id="queueCompleted">0</span>
+              <span class="stat-label" data-i18n="queue.completed">Completed</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number" id="queueFailed">0</span>
+              <span class="stat-label" data-i18n="queue.failed">Failed</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number" id="queueTotal">0</span>
+              <span class="stat-label" data-i18n="queue.total">Total</span>
+            </div>
+          </div>
+          <div class="queue-list" id="queueList">
+            <div class="queue-empty" data-i18n="queue.empty">No conversions yet. Upload a file and start converting!</div>
+          </div>
+          <div class="queue-actions">
+            <button class="btn btn-outline" id="clearQueueBtn" data-i18n="queue.clearAll">Clear All</button>
+            <button class="btn btn-outline" id="downloadAllQueueBtn" data-i18n="queue.downloadAll">Download All as ZIP</button>
           </div>
         </div>
       </section>
@@ -377,7 +593,7 @@
     <footer class="footer">
       <div class="footer-inner">
         <span>&copy; 2026 PixelForge — <span data-i18n="footer.tagline">Professional Image Conversion Platform</span></span>
-        <span class="footer-badge" data-i18n="footer.powered">Powered by Canvas API</span>
+        <span class="footer-badge" data-i18n="footer.powered">Powered by Canvas API &amp; Backend Engine</span>
       </div>
     </footer>
   </div>
@@ -396,6 +612,7 @@
   <script src="js/i18n.js"></script>
   <script src="js/converter.js"></script>
   <script src="js/cloud.js"></script>
+  <script src="js/universal.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>
