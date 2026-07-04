@@ -16,15 +16,6 @@
     "subtitle": "Images &middot; Documents &middot; Audio &middot; Video &middot; Archives &middot; More",
     "browse": "Select Files"
   },
-  "cat": {
-    "images": "Images",
-    "documents": "Documents",
-    "spreadsheets": "Spreadsheets",
-    "audio": "Audio",
-    "video": "Video",
-    "archives": "Archives",
-    "data": "Data"
-  },
   "cloud": {
     "gdrive": "Google Drive",
     "dropbox": "Dropbox"

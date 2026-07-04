@@ -663,62 +663,6 @@ const Universal = (() => {
     }
   }
 
-  // ===== Category Nav =====
-  function initCategoryNav() {
-    document.querySelectorAll('.cat-btn').forEach(btn => {
-      btn.addEventListener('click', () => {
-        document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        const category = btn.dataset.category;
-        updateConverterForCategory(category);
-      });
-    });
-  }
-
-  function updateConverterForCategory(category) {
-    const formatSelector = document.getElementById('formatSelector');
-    if (!formatSelector) return;
-
-    const formats = {
-      images: ['png', 'jpeg', 'webp', 'gif', 'bmp', 'avif'],
-      documents: ['pdf', 'docx', 'txt', 'html', 'md', 'odt'],
-      spreadsheets: ['xlsx', 'csv', 'ods', 'pdf'],
-      audio: ['mp3', 'wav', 'aac', 'flac', 'ogg', 'm4a'],
-      video: ['mp4', 'avi', 'mov', 'mkv', 'webm'],
-      archives: ['zip', 'tar', 'gz', '7z'],
-      data: ['json', 'xml', 'yaml', 'csv'],
-    };
-
-    const cats = formats[category] || formats.images;
-    formatSelector.innerHTML = cats.map(f => `
-      <button class="format-btn ${f === 'png' ? 'active' : ''}" data-format="${f}">${f.toUpperCase()}</button>
-    `).join('');
-
-    // Show/hide resize controls based on category
-    const resizeGroup = document.querySelector('.resize-controls')?.closest('.control-group');
-    if (resizeGroup) {
-      resizeGroup.style.display = category === 'images' || category === 'video' ? '' : 'none';
-    }
-
-    // Update quality label
-    const qualitySlider = document.getElementById('qualitySlider');
-    if (qualitySlider && category !== 'images') {
-      qualitySlider.style.display = category === 'images' ? '' : 'none';
-    }
-
-    // Reattach format button events
-    formatSelector.querySelectorAll('.format-btn').forEach(btn => {
-      btn.addEventListener('click', () => {
-        formatSelector.querySelectorAll('.format-btn').forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        // Update state
-        if (window.appState) {
-          window.appState.currentFormat = btn.dataset.format;
-        }
-      });
-    });
-  }
-
   // ===== Toast Notifications =====
   function showToast(message, type = 'info') {
     const container = document.getElementById('toastContainer');
@@ -748,7 +692,6 @@ const Universal = (() => {
 
   // ===== Init =====
   function init() {
-    initCategoryNav();
     initPdfTools();
     initMediaTools();
 
