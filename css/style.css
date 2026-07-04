@@ -203,9 +203,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo-icon {
-  width: 30px;
-  height: 30px;
-  filter: drop-shadow(0 0 8px var(--color-primary-glow));
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  object-fit: contain;
 }
 
 .logo-text {
