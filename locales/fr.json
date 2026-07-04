@@ -1,0 +1,110 @@
+{
+  "nav": {
+    "converter": "Convertisseur",
+    "editor": "Éditeur",
+    "settings": "Paramètres"
+  },
+  "hero": {
+    "title": "Convertissez vos images instantanément",
+    "subtitle": "Conversion d'images professionnelle avec outils d'édition, traitement par lots et support cloud"
+  },
+  "upload": {
+    "title": "Déposez vos images ici ou cliquez pour parcourir",
+    "supported": "Prend en charge : JPEG, PNG, GIF, BMP, TIFF, WEBP, SVG, AVIF",
+    "browse": "Parcourir"
+  },
+  "cloud": {
+    "gdrive": "Google Drive",
+    "dropbox": "Dropbox"
+  },
+  "gallery": {
+    "title": "Images importées",
+    "clear": "Tout effacer"
+  },
+  "controls": {
+    "format": "Format de sortie",
+    "quality": "Qualité",
+    "resize": "Options de redimensionnement",
+    "width": "Largeur",
+    "height": "Hauteur",
+    "aspect": "Conserver le ratio",
+    "convert": "Tout convertir",
+    "converting": "Conversion en cours..."
+  },
+  "results": {
+    "title": "Images converties",
+    "downloadAll": "Tout télécharger",
+    "download": "Télécharger"
+  },
+  "editor": {
+    "title": "Éditeur d'images",
+    "subtitle": "Outils d'édition avancés pour perfectionner vos images avant conversion",
+    "placeholder": "Sélectionnez une image depuis l'onglet Convertisseur",
+    "crop": "Recadrer",
+    "resize": "Redimensionner",
+    "rotate": "Pivoter",
+    "flip": "Retourner",
+    "adjust": "Ajuster",
+    "apply": "Appliquer",
+    "reset": "Réinitialiser",
+    "angle": "Angle",
+    "flipH": "Retourner horizontalement",
+    "flipV": "Retourner verticalement",
+    "brightness": "Luminosité",
+    "contrast": "Contraste",
+    "saturation": "Saturation",
+    "selectTool": "Sélectionnez un outil pour voir les options"
+  },
+  "settings": {
+    "title": "Paramètres",
+    "subtitle": "Personnalisez votre expérience",
+    "general": "Général",
+    "language": "Langue",
+    "languageDesc": "Choisir la langue de l'interface",
+    "theme": "Thème",
+    "themeDesc": "Mode sombre ou clair",
+    "dark": "Sombre",
+    "light": "Clair",
+    "defaultFormat": "Format de sortie par défaut",
+    "defaultFormatDesc": "Format par défaut pour les conversions",
+    "defaultQuality": "Qualité par défaut",
+    "defaultQualityDesc": "Pourcentage de qualité d'image par défaut",
+    "cloud": "Stockage cloud",
+    "gdriveDesc": "Connecter à Google Drive",
+    "dropboxDesc": "Connecter à Dropbox",
+    "connect": "Connecter",
+    "advanced": "Avancé",
+    "batchSize": "Taille max du lot",
+    "batchSizeDesc": "Nombre maximum d'images à traiter à la fois",
+    "autoDownload": "Téléchargement automatique",
+    "autoDownloadDesc": "Télécharger automatiquement les fichiers convertis",
+    "about": "À propos",
+    "version": "Version 1.0.0 — Plateforme professionnelle de conversion d'images"
+  },
+  "loading": {
+    "processing": "Traitement des images en cours...",
+    "progress": "Traitement",
+    "files": "fichiers"
+  },
+  "footer": {
+    "tagline": "Plateforme professionnelle de conversion d'images",
+    "powered": "Propulsé par Canvas API"
+  },
+  "toast": {
+    "noValidImages": "Aucun fichier image valide trouvé",
+    "imagesAdded": "image(s) ajoutée(s)",
+    "converted": "images converties avec succès",
+    "failed": "échec",
+    "error": "Erreur de conversion",
+    "loadedInEditor": "chargé dans l'éditeur",
+    "resized": "Image redimensionnée",
+    "rotated": "Rotation appliquée",
+    "flipped": "Retournement appliqué",
+    "adjusted": "Ajustements de couleur appliqués",
+    "reset": "Éditeur réinitialisé",
+    "uploaded": "téléversé vers le cloud",
+    "uploadError": "Erreur de téléversement",
+    "gdriveSetup": "Google Drive : définissez votre clé API dans Paramètres",
+    "dropboxSetup": "Dropbox : définissez votre clé d'application dans Paramètres"
+  }
+}

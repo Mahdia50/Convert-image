@@ -1,0 +1,110 @@
+{
+  "nav": {
+    "converter": "Konverter",
+    "editor": "Editor",
+    "settings": "Einstellungen"
+  },
+  "hero": {
+    "title": "Bilder sofort konvertieren",
+    "subtitle": "Professionelle Bildkonvertierung mit Bearbeitungswerkzeugen, Stapelverarbeitung und Cloud-Unterstützung"
+  },
+  "upload": {
+    "title": "Bilder hier ablegen oder klicken zum Durchsuchen",
+    "supported": "Unterstützt: JPEG, PNG, GIF, BMP, TIFF, WEBP, SVG, AVIF",
+    "browse": "Dateien durchsuchen"
+  },
+  "cloud": {
+    "gdrive": "Google Drive",
+    "dropbox": "Dropbox"
+  },
+  "gallery": {
+    "title": "Hochgeladene Bilder",
+    "clear": "Alle löschen"
+  },
+  "controls": {
+    "format": "Ausgabeformat",
+    "quality": "Qualität",
+    "resize": "Größenanpassung",
+    "width": "Breite",
+    "height": "Höhe",
+    "aspect": "Seitenverhältnis beibehalten",
+    "convert": "Alle konvertieren",
+    "converting": "Konvertiere..."
+  },
+  "results": {
+    "title": "Konvertierte Bilder",
+    "downloadAll": "Alle herunterladen",
+    "download": "Herunterladen"
+  },
+  "editor": {
+    "title": "Bildeditor",
+    "subtitle": "Erweiterte Bearbeitungswerkzeuge für Ihre Bilder vor der Konvertierung",
+    "placeholder": "Wählen Sie ein Bild aus dem Konverter-Tab zum Bearbeiten",
+    "crop": "Zuschneiden",
+    "resize": "Größe ändern",
+    "rotate": "Drehen",
+    "flip": "Spiegeln",
+    "adjust": "Anpassen",
+    "apply": "Anwenden",
+    "reset": "Zurücksetzen",
+    "angle": "Winkel",
+    "flipH": "Horizontal spiegeln",
+    "flipV": "Vertikal spiegeln",
+    "brightness": "Helligkeit",
+    "contrast": "Kontrast",
+    "saturation": "Sättigung",
+    "selectTool": "Wählen Sie ein Werkzeug, um Optionen zu sehen"
+  },
+  "settings": {
+    "title": "Einstellungen",
+    "subtitle": "Passen Sie Ihre Erfahrung an",
+    "general": "Allgemein",
+    "language": "Sprache",
+    "languageDesc": "Wählen Sie die Oberflächensprache",
+    "theme": "Design",
+    "themeDesc": "Dunkel oder hell",
+    "dark": "Dunkel",
+    "light": "Hell",
+    "defaultFormat": "Standard-Ausgabeformat",
+    "defaultFormatDesc": "Standardformat für Konvertierungen",
+    "defaultQuality": "Standardqualität",
+    "defaultQualityDesc": "Standard-Bildqualität in Prozent",
+    "cloud": "Cloud-Speicher",
+    "gdriveDesc": "Mit Google Drive verbinden",
+    "dropboxDesc": "Mit Dropbox verbinden",
+    "connect": "Verbinden",
+    "advanced": "Erweitert",
+    "batchSize": "Max. Stapelgröße",
+    "batchSizeDesc": "Maximale Anzahl Bilder pro Verarbeitung",
+    "autoDownload": "Auto-Download",
+    "autoDownloadDesc": "Konvertierte Dateien automatisch herunterladen",
+    "about": "Über",
+    "version": "Version 1.0.0 — Professionelle Bildkonvertierungsplattform"
+  },
+  "loading": {
+    "processing": "Bilder werden verarbeitet...",
+    "progress": "Verarbeite",
+    "files": "Dateien"
+  },
+  "footer": {
+    "tagline": "Professionelle Bildkonvertierungsplattform",
+    "powered": "Angetrieben von Canvas API"
+  },
+  "toast": {
+    "noValidImages": "Keine gültigen Bilddateien gefunden",
+    "imagesAdded": "Bild(er) hinzugefügt",
+    "converted": "Bilder erfolgreich konvertiert",
+    "failed": "fehlgeschlagen",
+    "error": "Konvertierungsfehler",
+    "loadedInEditor": "im Editor geladen",
+    "resized": "Bildgröße geändert",
+    "rotated": "Drehung angewendet",
+    "flipped": "Spiegelung angewendet",
+    "adjusted": "Farbanpassungen angewendet",
+    "reset": "Editor zurückgesetzt",
+    "uploaded": "in die Cloud hochgeladen",
+    "uploadError": "Upload-Fehler",
+    "gdriveSetup": "Google Drive: API-Schlüssel in Einstellungen festlegen",
+    "dropboxSetup": "Dropbox: App-Schlüssel in Einstellungen festlegen"
+  }
+}
