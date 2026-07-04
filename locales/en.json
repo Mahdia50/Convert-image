@@ -12,9 +12,9 @@
     "subtitle": "Professional-grade file conversion — images, documents, audio, video, and more"
   },
   "upload": {
-    "title": "Drop images here or click to browse",
-    "supported": "All file types supported — Images, Documents, Audio, Video, Archives, and more",
-    "browse": "Browse Files"
+    "title": "Drop any file, get any format",
+    "subtitle": "Images &middot; Documents &middot; Audio &middot; Video &middot; Archives &middot; More",
+    "browse": "Select Files"
   },
   "cat": {
     "images": "Images",

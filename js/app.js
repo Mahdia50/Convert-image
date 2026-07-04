@@ -81,12 +81,12 @@
     const browseBtn = $('#browseBtn');
     const clearAllBtn = $('#clearAllBtn');
 
-    // Click to browse
+    // Click to browse — entire drop-hero zone
     browseBtn.addEventListener('click', () => fileInput.click());
     uploadArea.addEventListener('click', (e) => {
-      if (e.target === uploadArea || e.target.closest('.upload-content')) {
-        fileInput.click();
-      }
+      // Don't trigger if clicking a button inside the zone
+      if (e.target.closest('button') || e.target.closest('.format-chip')) return;
+      fileInput.click();
     });
 
     // File selection
