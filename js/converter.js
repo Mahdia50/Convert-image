@@ -1,5 +1,5 @@
 /* =============================================
-   PixelForge - Image Conversion Engine
+   Convertinoall - Image Conversion Engine
    Client-side conversion using Canvas API
    ============================================= */
 

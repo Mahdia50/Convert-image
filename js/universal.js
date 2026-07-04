@@ -1,5 +1,5 @@
 /* =============================================
-   PixelForge - Universal File Converter Module
+   Convertinoall - Universal File Converter Module
    Handles backend API, queue, PDF & media tools
    ============================================= */
 

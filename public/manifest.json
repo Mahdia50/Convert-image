@@ -13,13 +13,13 @@
   "screenshots": [],
   "icons": [
     {
-      "src": "assets/logo.png",
+      "src": "/assets/logo.png",
       "sizes": "1254x1254",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "assets/icon-192.svg",
+      "src": "/assets/icon-192.svg",
       "sizes": "192x192",
       "type": "image/svg+xml",
       "purpose": "any"

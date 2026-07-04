@@ -1,5 +1,5 @@
 /* =============================================
-   PixelForge - Main Application Controller
+   Convertinoall - Main Application Controller
    ============================================= */
 
 (function () {
@@ -50,7 +50,7 @@
     setupThemeToggle();
     setupLanguageSelector();
 
-    console.log('PixelForge initialized');
+    console.log('Convertinoall initialized');
   }
 
   // ===== Navigation =====

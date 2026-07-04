@@ -1,5 +1,5 @@
 /* =============================================
-   PixelForge - Cloud Storage Integration
+   Convertinoall - Cloud Storage Integration
    Google Drive & Dropbox API connectors
    ============================================= */
 

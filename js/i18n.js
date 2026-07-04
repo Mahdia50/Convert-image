@@ -1,5 +1,5 @@
 /* =============================================
-   PixelForge - Internationalization Module
+   Convertinoall - Internationalization Module
    ============================================= */
 
 const I18n = (() => {
