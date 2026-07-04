@@ -108,6 +108,24 @@ const I18n = (() => {
       document.documentElement.lang = currentLang;
     }
 
+    // Update hreflang link tags with correct language
+    const langCode = currentLang;
+    document.querySelectorAll('link[rel="alternate"][hreflang]').forEach(link => {
+      const href = link.getAttribute('href');
+      if (href) {
+        // Update lang parameter for non-default languages
+        const hreflang = link.getAttribute('hreflang');
+        if (hreflang !== 'x-default') {
+          const baseUrl = href.split('?')[0];
+          if (hreflang === 'en') {
+            link.setAttribute('href', baseUrl);
+          } else {
+            link.setAttribute('href', `${baseUrl}?lang=${hreflang}`);
+          }
+        }
+      }
+    });
+
     // Sync select elements
     document.querySelectorAll('select[id$="LangSelect"], select[id="settingsLangSelect"]').forEach(sel => {
       sel.value = currentLang;

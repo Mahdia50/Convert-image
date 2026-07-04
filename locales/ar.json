@@ -1,24 +1,27 @@
 {
   "nav": {
-    "converter": "المحول",
-    "editor": "المحرر",
-    "settings": "الإعدادات"
+    "converter": "محول الملفات",
+    "editor": "محرر الصور",
+    "settings": "الإعدادات",
+    "pdfTools": "أدوات PDF",
+    "mediaTools": "أدوات الوسائط",
+    "queue": "قائمة الانتظار"
   },
   "hero": {
-    "title": "حوّل الصور فوراً",
-    "subtitle": "تحويل صور احترافي مع أدوات التحرير والمعالجة الجماعية ودعم السحابة"
+    "title": "محول ملفات مجاني أونلاين",
+    "subtitle": "حوّل الصور، PDF، المستندات، الصوت والفيديو — يدعم أكثر من 50 صيغة. مجاني 100%، بدون تسجيل."
   },
   "upload": {
-    "title": "أسقط الصور هنا أو انقر للتصفح",
-    "supported": "يدعم: JPEG, PNG, GIF, BMP, TIFF, WEBP, SVG, AVIF",
-    "browse": "تصفح الملفات"
+    "title": "أسقط أي ملف، احصل على أي صيغة",
+    "subtitle": "صور · PDF · مستندات · صوت · فيديو · أرشيف · جداول بيانات",
+    "browse": "اختيار ملفات"
   },
   "cloud": {
-    "gdrive": "جوجل درايف",
-    "dropbox": "دروب بوكس"
+    "gdrive": "Google Drive",
+    "dropbox": "Dropbox"
   },
   "gallery": {
-    "title": "الصور المرفوعة",
+    "title": "الملفات المرفوعة",
     "clear": "مسح الكل"
   },
   "controls": {
@@ -27,24 +30,24 @@
     "resize": "خيارات تغيير الحجم",
     "width": "العرض",
     "height": "الارتفاع",
-    "aspect": "الحفاظ على نسبة الأبعاد",
+    "aspect": "الحفاظ على نسبة العرض",
     "convert": "تحويل الكل",
-    "converting": "جاري التحويل..."
+    "converting": "جارٍ التحويل..."
   },
   "results": {
-    "title": "الصور المحولة",
+    "title": "الملفات المحولة",
     "downloadAll": "تحميل الكل",
     "download": "تحميل"
   },
   "editor": {
-    "title": "محرر الصور",
-    "subtitle": "أدوات تحرير متقدمة لإتقان صورك قبل التحويل",
-    "placeholder": "اختر صورة من علامة التبويب 'محول' للتحرير",
+    "title": "محرر صور مجاني أونلاين",
+    "subtitle": "غيِّر الحجم، استدارة، اقلب واضبط صورك قبل التحويل — كل ذلك في المتصفح",
+    "placeholder": "حمّل صورة من التبويب السابق لبدء التحرير",
     "crop": "قص",
     "resize": "تغيير الحجم",
     "rotate": "تدوير",
     "flip": "قلب",
-    "adjust": "تعديل",
+    "adjust": "ضبط",
     "apply": "تطبيق",
     "reset": "إعادة تعيين",
     "angle": "الزاوية",
@@ -55,56 +58,111 @@
     "saturation": "التشبع",
     "selectTool": "اختر أداة لرؤية الخيارات"
   },
+  "pdfTools": {
+    "title": "أدوات PDF مجانية أونلاين",
+    "subtitle": "حوّل Word إلى PDF، ادمج، قص، ضغط، احمِ وأزل الحماية من مستندات PDF — مجاني وآمن",
+    "wordToPdf": "Word إلى PDF",
+    "wordToPdfDesc": "تحويل DOC/DOCX إلى PDF أونلاين مجاناً",
+    "pdfToWord": "PDF إلى Word",
+    "pdfToWordDesc": "استخراج النص من PDF إلى Word قابل للتعديل",
+    "merge": "دمج PDF",
+    "mergeDesc": "دمج عدة ملفات PDF في مستند واحد",
+    "split": "تقسيم PDF",
+    "splitDesc": "استخراج صفحات محددة من ملف PDF",
+    "compress": "ضغط PDF",
+    "compressDesc": "تقليل حجم ملف PDF مع الحفاظ على الجودة",
+    "rotate": "تدوير PDF",
+    "rotateDesc": "تدوير صفحات PDF بأي زاوية",
+    "protect": "حماية PDF",
+    "protectDesc": "إضافة كلمة مرور لحماية مستندات PDF",
+    "unlock": "فتح PDF",
+    "unlockDesc": "إزالة كلمة المرور من ملفات PDF المحمية",
+    "pdfToImages": "PDF إلى صور",
+    "pdfToImagesDesc": "تحويل كل صفحة PDF إلى صورة عالية الجودة",
+    "imagesToPdf": "صور إلى PDF",
+    "imagesToPdfDesc": "دمج عدة صور في مستند PDF واحد"
+  },
+  "mediaTools": {
+    "title": "محول صوت وفيديو مجاني",
+    "subtitle": "حوّل، ضغط، قص واستخرج الصوت من الفيديو — مجاناً بدون علامة مائية",
+    "convertVideo": "تحويل فيديو",
+    "convertVideoDesc": "تغيير صيغة الفيديو بين MP4، AVI، MOV، MKV والمزيد",
+    "compressVideo": "ضغط فيديو",
+    "compressVideoDesc": "تقليل حجم ملف الفيديو للمشاركة بسهولة",
+    "trimVideo": "قص فيديو",
+    "trimVideoDesc": "قص وإزالة المقاطع غير المرغوب فيها من ملفات الفيديو",
+    "extractAudio": "استخراج الصوت",
+    "extractAudioDesc": "استخراج MP3، WAV أو AAC من ملفات الفيديو",
+    "convertAudio": "تحويل صوت",
+    "convertAudioDesc": "التحويل بين MP3، WAV، AAC، FLAC، OGG والمزيد",
+    "trimAudio": "قص صوت",
+    "trimAudioDesc": "قص ملفات الصوت واستخراج المقاطع المفضلة",
+    "changeResolution": "تغيير الدقة",
+    "changeResolutionDesc": "تغيير حجم الفيديو لأي دقة",
+    "createGif": "إنشاء GIF",
+    "createGifDesc": "تحويل أي مقطع فيديو إلى GIF متحرك"
+  },
+  "queue": {
+    "title": "قائمة انتظار التحويل",
+    "subtitle": "راقب وأدر تحويلات ملفاتك في الوقت الفعلي",
+    "active": "نشط",
+    "completed": "مكتمل",
+    "failed": "فشل",
+    "total": "المجموع",
+    "empty": "لا توجد تحويلات بعد. حمّل ملفاً للبدء!",
+    "clearAll": "مسح الكل",
+    "downloadAll": "تحميل الكل كملف ZIP"
+  },
   "settings": {
     "title": "الإعدادات",
-    "subtitle": "خصص تجربتك",
+    "subtitle": "خصص تجربة محول الملفات الخاص بك",
     "general": "عام",
     "language": "اللغة",
-    "languageDesc": "اختر لغة الواجهة",
+    "languageDesc": "اختر لغة الواجهة المفضلة",
     "theme": "المظهر",
-    "themeDesc": "الوضع الداكن أو الفاتح",
+    "themeDesc": "التبديل بين الوضع الداكن والفاتح",
     "dark": "داكن",
     "light": "فاتح",
     "defaultFormat": "صيغة الإخراج الافتراضية",
-    "defaultFormatDesc": "الصيغة الافتراضية للتحويل",
+    "defaultFormatDesc": "الصيغة المفضلة لتحويل الملفات",
     "defaultQuality": "الجودة الافتراضية",
-    "defaultQualityDesc": "نسبة جودة الصورة الافتراضية",
+    "defaultQualityDesc": "نسبة جودة الصور الافتراضية (أعلى = جودة أفضل)",
     "cloud": "التخزين السحابي",
-    "gdriveDesc": "الاتصال بجوجل درايف",
-    "dropboxDesc": "الاتصال بدروب بوكس",
+    "gdriveDesc": "ربط حساب Google Drive",
+    "dropboxDesc": "ربط حساب Dropbox",
     "connect": "اتصال",
     "advanced": "متقدم",
     "batchSize": "الحد الأقصى للدفعة",
-    "batchSizeDesc": "الحد الأقصى للصور في المعالجة الواحدة",
+    "batchSizeDesc": "الحد الأقصى للملفات التي تتم معالجتها في وقت واحد",
     "autoDownload": "تحميل تلقائي",
-    "autoDownloadDesc": "تحميل الملفات المحولة تلقائياً",
+    "autoDownloadDesc": "تحميل الملفات المحولة تلقائياً عند الانتهاء",
     "about": "حول",
-    "version": "الإصدار 1.0.0 — منصة تحويل صور احترافية"
+    "version": "إصدار 2.0.0 — محول ملفات عالمي مجاني"
   },
   "loading": {
-    "processing": "جاري معالجة الصور...",
+    "processing": "جارٍ معالجة ملفاتك...",
     "progress": "معالجة",
     "files": "ملف"
   },
   "footer": {
-    "tagline": "منصة تحويل صور احترافية",
-    "powered": "مدعوم بتقنية Canvas API"
+    "tagline": "محول ملفات مجاني أونلاين — حوّل الصور، PDF، المستندات والمزيد",
+    "powered": "مدعوم بـ Canvas API ومحرك خلفي"
   },
   "toast": {
-    "noValidImages": "لم يتم العثور على ملفات صور صالحة",
-    "imagesAdded": "صورة (صور) مضافة",
-    "converted": "تم التحويل بنجاح",
+    "noValidImages": "لا توجد ملفات صالحة. يرجى رفع صيغة مدعومة.",
+    "imagesAdded": "ملف (ملفات) تمت إضافتها بنجاح",
+    "converted": "ملف تم تحويله بنجاح",
     "failed": "فشل",
     "error": "خطأ في التحويل",
-    "loadedInEditor": "تم التحميل في المحرر",
-    "resized": "تم تغيير حجم الصورة",
-    "rotated": "تم تطبيق التدوير",
-    "flipped": "تم تطبيق القلب",
+    "loadedInEditor": "تم التحميل في محرر الصور",
+    "resized": "تم تغيير حجم الصورة بنجاح",
+    "rotated": "تم تطبيق التدوير بنجاح",
+    "flipped": "تم تطبيق القلب بنجاح",
     "adjusted": "تم تطبيق تعديلات الألوان",
     "reset": "تم إعادة تعيين المحرر",
-    "uploaded": "تم الرفع إلى السحابة",
-    "uploadError": "خطأ في الرفع",
-    "gdriveSetup": "جوجل درايف: قم بتعيين مفتاح API في الإعدادات",
-    "dropboxSetup": "دروب بوكس: قم بتعيين مفتاح التطبيق في الإعدادات"
+    "uploaded": "تم الرفع إلى التخزين السحابي",
+    "uploadError": "فشل الرفع إلى السحابة",
+    "gdriveSetup": "Google Drive: اضبط مفتاح API في الإعدادات",
+    "dropboxSetup": "Dropbox: اضبط مفتاح التطبيق في الإعدادات"
   }
 }

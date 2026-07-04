@@ -1,22 +1,42 @@
 {
-  "name": "PixelForge - Image Converter",
-  "short_name": "PixelForge",
-  "description": "Professional image conversion platform with editing, batch processing, and cloud support",
-  "start_url": "/",
+  "name": "Convert-Image — Free Online File Converter",
+  "short_name": "Convert-Image",
+  "description": "Free online file converter. Convert images, PDF, DOCX, XLSX, PPTX, audio, video, and archives instantly in your browser. 50+ formats supported, 100% free.",
+  "start_url": "/Convert-image/",
   "display": "standalone",
-  "background_color": "#0f0f1a",
-  "theme_color": "#0f0f1a",
+  "background_color": "#0F1923",
+  "theme_color": "#0F1923",
   "orientation": "any",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": ["utilities", "multimedia", "productivity"],
+  "screenshots": [],
   "icons": [
     {
-      "src": "assets/icon-192.png",
-      "sizes": "192x192",
-      "type": "image/png"
+      "src": "assets/logo.png",
+      "sizes": "1254x1254",
+      "type": "image/png",
+      "purpose": "any maskable"
     },
     {
-      "src": "assets/icon-512.png",
-      "sizes": "512x512",
-      "type": "image/png"
+      "src": "assets/icon-192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Converter",
+      "short_name": "Convert",
+      "description": "Open file converter",
+      "url": "/Convert-image/#tab-converter"
+    },
+    {
+      "name": "PDF Tools",
+      "short_name": "PDF",
+      "description": "PDF tools",
+      "url": "/Convert-image/#tab-pdf-tools"
     }
   ]
 }
