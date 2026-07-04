@@ -9,7 +9,6 @@ import { convertDocument, convertMarkdown } from './documentService';
 import { createZipArchive } from './archiveService';
 import { getFileBuffer, getOutputPath, cleanupFiles } from '../utils/tempFiles';
 import { v4 as uuid } from 'uuid';
-import { ConversionJob, ConversionResult } from '../types';
 
 class ConversionQueue {
   private jobs: Map<string, ConversionJob> = new Map();

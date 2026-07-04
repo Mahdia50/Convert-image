@@ -1,30 +1,40 @@
 import express from 'express';
-import { celebrate } from 'celebrate';
-import { convertRouter } from './routes/convert';
-import { uploadRouter } from './routes/upload';
-import { statusRouter } from './routes/status';
+import convertRouter from './routes/convert';
 import cors from 'cors';
 
 const app = express();
 const port = process.env.PORT || 3000;
 
 app.use(cors());
-app.use(express.json());
+app.use(express.json({ limit: '500mb' }));
+app.use(express.urlencoded({ extended: true, limit: '500mb' }));
 
 // Routes
-app.use('/api/upload', uploadRouter);
-app.use('/api/convert', convertRouter);
-app.use('/api/status', statusRouter);
+app.use('/api', convertRouter);
 
-// Health check
-app.get('/', (req, res) => {
-  res.status(200).json({
-    message: 'Universal File Converter API is running',
+// Health check & system info
+app.get('/api/status', (_req, res) => {
+  const { execSync } = require('child_process');
+  const check = (name: string) => {
+    try { execSync(`which ${name}`, { stdio: 'pipe' }); return true; } catch { return false; }
+  };
+  res.json({
+    status: 'ok',
     version: '1.0.0',
-    timestamp: new Date().toISOString()
+    tools: {
+      ghostscript: check('gs'),
+      ffmpeg: check('ffmpeg'),
+      pandoc: check('pandoc'),
+      imagemagick: check('convert'),
+    },
   });
 });
 
+// Root
+app.get('/', (_req, res) => {
+  res.json({ message: 'PixelForge Universal File Converter API', version: '1.0.0' });
+});
+
 app.listen(port, () => {
-  console.log(`Server running on http://localhost:${port}`);
+  console.log(`PixelForge server running on http://localhost:${port}`);
 });

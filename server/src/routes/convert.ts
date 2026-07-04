@@ -1,8 +1,8 @@
 import { Router, Request, Response } from 'express';
 import { conversionQueue, convertFile } from '../services/converter';
-import { saveUploadedFile, cleanupFile, getFileBuffer, getOutputPath, fileExists } from '../utils/tempFiles';
-import { validateFile, validateOutputFormat, getFileCategory, getSupportedTargets, MAX_FILE_SIZE } from '../utils/fileTypes';
-import { Upload } from 'multer';
+import { saveUploadedFile, getOutputPath, fileExists } from '../utils/tempFiles';
+import { getFileCategory, getSupportedTargets, MAX_FILE_SIZE } from '../utils/fileTypes';
+import { validateFile } from '../utils/validation';
 import { storage } from './upload';
 
 const router = Router();
@@ -97,7 +97,8 @@ router.get('/status', (req: Request, res: Response) => {
 
 // Get job status
 router.get('/jobs/:id', (req: Request, res: Response) => {
-  const job = conversionQueue.getJob(req.params.id);
+  const jobId = req.params.id as string;
+  const job = conversionQueue.getJob(jobId);
   if (!job) {
     return res.status(404).json({ error: 'Job not found' });
   }
@@ -106,7 +107,8 @@ router.get('/jobs/:id', (req: Request, res: Response) => {
 
 // Cancel job
 router.delete('/jobs/:id', (req: Request, res: Response) => {
-  const cancelled = conversionQueue.cancelJob(req.params.id);
+  const jobId = req.params.id as string;
+  const cancelled = conversionQueue.cancelJob(jobId);
   if (!cancelled) {
     return res.status(404).json({ error: 'Job not found or cannot be cancelled' });
   }
@@ -115,13 +117,13 @@ router.delete('/jobs/:id', (req: Request, res: Response) => {
 
 // Get recent jobs
 router.get('/jobs/recent', (req: Request, res: Response) => {
-  const limit = parseInt(req.query.limit as string) || 20;
+  const limit = parseInt(String(req.query.limit || '20'));
   res.json(conversionQueue.getRecentJobs(limit));
 });
 
 // Download file
 router.get('/download/:id', (req: Request, res: Response) => {
-  const { id } = req.params;
+  const id = req.params.id as string;
   const outputPath = getOutputPath(id, ''); // Extension is already part of the filename
 
   if (!fileExists(outputPath)) {

@@ -2,11 +2,17 @@ import { diskStorage } from 'multer';
 import * as path from 'path';
 import { v4 as uuid } from 'uuid';
 
+import * as fs from 'fs';
+import * as os from 'os';
+
+const uploadDir = path.join(os.tmpdir(), 'pixelforge-uploads');
+if (!fs.existsSync(uploadDir)) fs.mkdirSync(uploadDir, { recursive: true });
+
 export const storage = diskStorage({
-  destination: (req, file, cb) => {
-    cb(null, path.join(require('os').tmpdir(), 'pixelforge-uploads'));
+  destination: (_req, _file, cb) => {
+    cb(null, uploadDir);
   },
-  filename: (req, file, cb) => {
+  filename: (_req, file, cb) => {
     const ext = path.extname(file.originalname);
     cb(null, `${uuid()}${ext}`);
   },
@@ -19,5 +25,3 @@ export const uploadConfig = {
   },
   storage,
 };
-
-module.exports = { storage, uploadConfig };

@@ -49,7 +49,7 @@ export async function processPDFLib(
         const degrees = (options.degrees as number) || 90;
         const pages = pdfDoc.getPages();
         for (const page of pages) {
-          page.setRotation({ angle: degrees as any });
+          page.setRotation({ angle: degrees } as any);
         }
         const pdfBytes = await pdfDoc.save();
         fs.writeFileSync(outputPath, pdfBytes);

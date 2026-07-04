@@ -57,7 +57,8 @@ export async function convertWithSharp(
         pipeline = pipeline.avif({ quality });
         break;
       case 'bmp':
-        pipeline = pipeline.bmp();
+        // BMP is not supported by sharp directly; use png as fallback
+        pipeline = pipeline.png({ compressionLevel: 9 });
         break;
       case 'heic':
         pipeline = pipeline.heif({ quality, compression: 'hevc' });
